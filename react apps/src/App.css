@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   width: 526px;
-  margin: 91px auto 30px auto;
+  margin: 10px auto 30px auto;
   gap: 19px;
 }
 
@@ -49,4 +49,10 @@
 
 .location a{
   text-decoration: none;
+}
+.container{
+  margin-top: 90px;
+}
+.description h1{
+  white-space: nowrap;
 }
