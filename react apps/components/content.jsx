@@ -4,6 +4,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 export default function Content({img , title , country , googleMapsLink , dates , text })
 {
+  
     return (
         <> 
             <div className='entrydata'>

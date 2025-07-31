@@ -2,7 +2,7 @@
 import './App.css'
 import Header from "../components/Header"
 import Content from "../components/content"
-import AnonymArray from "../../data"
+import AnonymArray from "../data"
 
 function App() {
 
