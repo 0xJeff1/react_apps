@@ -1,14 +1,19 @@
 
 import './App.css'
+import './home.css'
 import Header from "../components/Header"
+import Home from "../components/Home"
 import Content from "../components/content"
 import AnonymArray from "../data"
+import projectlist from "../list"
+
+
 
 function App() {
-
-  const h = AnonymArray.map((obj) => {
+  
+  const b = AnonymArray.map((obj) => {
     return (
-      <Content
+      <Home
         img={{
           src: obj.img.src,
           alt: obj.img.alt
@@ -24,10 +29,13 @@ function App() {
 
   return (
     <>
-      <Header />
+    <h1>Projects</h1>
+   
+    <Home projects={projectlist} />
+      {/* <Header />
       <div className='container'>
-      {h}
-      </div>
+        {h}
+      </div> */}
       
     </>
   )
