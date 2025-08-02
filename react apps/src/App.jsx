@@ -31,7 +31,6 @@ function App() {
       <Router>
         <Routes>
         <Route path='/' element={<>
-          <h1>Projects</h1>
           <Home projects={projectlist} /> 
         </>}/>
 

@@ -4,8 +4,8 @@ export default [
     description:
       "A dynamic journal app built using `.map()` and props to render location-based cards from a local data file. Focused on reusable components and layout composition.",
     module: "Section 2 – Data-Driven React",
-    liveLink: "https://your-live-link.com/travel-journal",
-    figmaLink: "https://www.figma.com/file/.../Travel-Journal",
+    liveLink: "/content",
+    figmaLink: "https://www.figma.com/design/QG4cOExkdbIbhSfWJhs2gs/Travel-Journal?node-id=2-2",
   },
   {
     title: "Meme Generator",
