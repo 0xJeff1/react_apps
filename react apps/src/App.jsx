@@ -1,11 +1,10 @@
-
-import './App.css'
-import './home.css'
+import "./App.css"
 import Header from "../components/Header"
 import Home from "../components/Home"
 import Content from "../components/content"
 import AnonymArray from "../data"
 import projectlist from "../list"
+import { BrowserRouter as Router  , Routes , Route } from 'react-router-dom'
 
 
 
@@ -13,7 +12,7 @@ function App() {
   
   const b = AnonymArray.map((obj) => {
     return (
-      <Home
+      <Content
         img={{
           src: obj.img.src,
           alt: obj.img.alt
@@ -29,16 +28,25 @@ function App() {
 
   return (
     <>
-    <h1>Projects</h1>
-   
-    <Home projects={projectlist} />
-      {/* <Header />
-      <div className='container'>
-        {h}
-      </div> */}
-      
+      <Router>
+        <Routes>
+        <Route path='/' element={<>
+          <h1>Projects</h1>
+          <Home projects={projectlist} /> 
+        </>}/>
+
+        <Route path='/content' element={<>
+          <Header /> 
+          <div className='cont'>
+            {b}
+          </div>
+        </>}/>
+
+        </Routes>
+      </Router>
     </>
   )
 }
 
 export default App
+     

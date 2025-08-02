@@ -1,4 +1,4 @@
-import '../src/App.css'
+import '../src/content.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
