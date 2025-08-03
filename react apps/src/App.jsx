@@ -1,6 +1,8 @@
 import "./App.css"
 import Header from "../components/Header"
+import Main from "../components/Main"
 import Home from "../components/Home"
+import Headerchef from  "../components/Headerchef"
 import Content from "../components/content"
 import AnonymArray from "../data"
 import projectlist from "../list"
@@ -30,16 +32,21 @@ function App() {
     <>
       <Router>
         <Routes>
-        <Route path='/' element={<>
-          <Home projects={projectlist} /> 
-        </>}/>
+            <Route path='/' element={<>
+              <Home projects={projectlist} /> 
+            </>}/>
 
-        <Route path='/content' element={<>
-          <Header /> 
-          <div className='cont'>
-            {b}
-          </div>
-        </>}/>
+            <Route path='/content' element={<>
+              <Header /> 
+              <div className='cont'>
+                {b}
+              </div>
+            </>}/>
+
+            <Route path='/Chefclaude' element={<>
+              <Headerchef />
+              <Main />
+            </>}/>
 
         </Routes>
       </Router>

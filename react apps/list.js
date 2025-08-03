@@ -7,6 +7,17 @@ export default [
     liveLink: "/content",
     figmaLink: "https://www.figma.com/design/QG4cOExkdbIbhSfWJhs2gs/Travel-Journal?node-id=2-2",
   },
+
+  {
+    title: "Chef Claude – AI-Powered Recipe Assistant",
+    description:
+      "Chef Claude is a React-based web application that uses AI to help users generate personalized recipes. Users can input ingredients or preferences, and the app suggests creative meals powered by AI. It demonstrates foundational React concepts like JSX and components, along with API integration, dynamic rendering, and styled UI components.",
+    module: "Custom Project – React + AI Integration",
+    liveLink: "/Chefclaude",
+    figmaLink: "https://www.figma.com/design/73iyU720zWmrWgJsok5tYE/Chef-Claude?node-id=0-1&p=f&t=ry9fdBgqhs8A5DXE-0"
+  },
+  
+
   {
     title: "Meme Generator",
     description:
