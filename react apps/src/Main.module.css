@@ -28,6 +28,8 @@ header > h1 {
 
 main {
     padding: 30px 30px 10px;
+    width: 600px;
+    margin: 0 auto 0 auto;
 }
 
 .addingredientform {
@@ -62,3 +64,8 @@ main {
     content: "+";
     margin-right: 5px;
 }
+
+.ull{
+    margin-top: 23px;
+}
+
