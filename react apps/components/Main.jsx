@@ -2,27 +2,28 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import styles from '../src/Main.module.css';
+import React, { useState } from 'react';
 
-
-let ingredientlist = ["milk" , "tomato ", "potato"];
-console.log(ingredientlist);
-
-
-let ingrlist = ingredientlist.map((ing )=> {
-    return <li  key={ing}> {ing} </li>
-})
-
-function Check(e)
-{
-    e.preventDefault()
-    const formData = new FormData(e.currentTarget)
-    const NewIngridient = formData.get("Ingredients")
-    ingredientlist.push(NewIngridient);
-}
-
-console.log(ingrlist);
 
 export default function Main() {
+
+    let [ingredientlist , setingredientlist] = React.useState (["milk" , "tomato ", "potato"]);
+
+    let ingrlist = ingredientlist.map((ing )=> {
+        return <li  key={ing}> {ing} </li>
+    })
+
+
+    
+    function Check(e)
+    {
+        e.preventDefault()
+        const formData = new FormData(e.currentTarget)
+        const NewIngridient = formData.get("Ingredients")
+        setingredientlist((prev) => {
+            return [...prev , NewIngridient]});
+    }
+    
     return (
         <main>
             <form onSubmit={Check} className={styles.addingredientform}>
