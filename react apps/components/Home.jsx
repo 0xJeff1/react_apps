@@ -35,7 +35,7 @@ const Home = ({ projects }) => {
           <div className={dark ? styles.projectCarddark : styles.projectCard} key={index}>
             <div className={styles.projectHeader}>
               <div className={styles.projectInfo}>
-                <div className={styles.projectTitle}>{project.title}</div>
+                <div className={dark ? styles.projectTitledark : styles.projectTitle}>{project.title}</div>
                 <div className={dark ? styles.projectDescriptiondark : styles.projectDescription}>{project.description}</div>
                 <div className={styles.projectLinks}>
                 <Link 
