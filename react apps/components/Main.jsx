@@ -6,8 +6,14 @@ import React, { useState } from 'react';
 
 
 export default function Main() {
-
+    
     let [ingredientlist , setingredientlist] = React.useState (["1","2","3","4"]);
+    let [isShown , setisShown] = React.useState (false);
+
+    function toggletheshow() {
+        setisShown(prev => !prev);
+    }
+    
 
     let ingrlist = ingredientlist.map((ing )=> {
         return <li  key={ing}> {ing} </li>
@@ -44,11 +50,13 @@ export default function Main() {
                         <h3>Ready for a recipe?</h3>
                         <p>Generate a recipe from your list of ingredients.</p>
                     </div>
-                    <button>Get a recipe</button>
+                    <button onClick={toggletheshow}>Get a recipe</button>
                 </div>}
             </section>}
-            {
-    <section>
+
+
+
+    { isShown && <section>
     <h2 className={styles.h2}>Chef Claude Recommends:</h2>
     <article className={styles.suggestedrecipecontainer} aria-live="polite">
         <p>Based on the ingredients you have available, I would recommend making a simple a delicious <strong>Beef Bolognese Pasta</strong>. Here is the recipe:</p>
@@ -80,6 +88,10 @@ export default function Main() {
         </ol>
     </article>
 </section>}
+
+
+
+
         </main>
     )
 }

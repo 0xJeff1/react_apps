@@ -1,0 +1,33 @@
+.btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+
+  .btm {
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.15);
+  }
+  
+  
+
+
+  

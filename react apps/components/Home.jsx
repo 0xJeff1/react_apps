@@ -1,16 +1,42 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+
 import styles from '../src/home.module.css';
+import style from '../src/ThemeToggle.module.css';
 import { Link } from "react-router-dom"
+import { useEffect, useState } from 'react';
+
+
 
 const Home = ({ projects }) => {
+    const [dark, setDark] = useState(false);
   return (
+    <div className={dark ? styles.dark : styles.white}>
+
     <div className={styles.container}>
+          <>
+          <button
+            className={dark ? style.btm : style.btn}
+            onClick={() => setDark(prev => !prev)}
+            aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            <FontAwesomeIcon
+              icon={dark ? faSun : faMoon}
+              className={style.icon}
+              fixedWidth
+            />
+          </button>
+          </>
+      
       <div className={styles.projectsList}>
         {projects.map((project, index) => (
-          <div className={styles.projectCard} key={index}>
+          <div className={dark ? styles.projectCarddark : styles.projectCard} key={index}>
             <div className={styles.projectHeader}>
               <div className={styles.projectInfo}>
                 <div className={styles.projectTitle}>{project.title}</div>
-                <div className={styles.projectDescription}>{project.description}</div>
+                <div className={dark ? styles.projectDescriptiondark : styles.projectDescription}>{project.description}</div>
                 <div className={styles.projectLinks}>
                 <Link 
                   to={project.liveLink}
@@ -49,6 +75,7 @@ const Home = ({ projects }) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
