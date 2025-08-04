@@ -108,5 +108,30 @@ main {
 
 .h2{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
+
+.h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.suggestedrecipecontainer {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.suggestedrecipecontainer ul li, .suggestedrecipecontainer ol li {
+    margin-bottom: 8px;
+    margin-left: 50px;
+}
+
+.stron{
+    display: inline-block;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
 
