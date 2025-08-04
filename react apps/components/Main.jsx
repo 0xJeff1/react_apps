@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 export default function Main() {
 
-    let [ingredientlist , setingredientlist] = React.useState (["milk" , "tomato ", "potato"]);
+    let [ingredientlist , setingredientlist] = React.useState ([]);
 
     let ingrlist = ingredientlist.map((ing )=> {
         return <li  key={ing}> {ing} </li>
@@ -15,18 +15,17 @@ export default function Main() {
 
 
     
-    function Check(e)
+    function Check(formData)
     {
-        e.preventDefault()
-        const formData = new FormData(e.currentTarget)
         const NewIngridient = formData.get("Ingredients")
         setingredientlist((prev) => {
             return [...prev , NewIngridient]});
+        
     }
     
     return (
         <main>
-            <form onSubmit={Check} className={styles.addingredientform}>
+            <form action={Check} className={styles.addingredientform}>
                 <input 
                     type="text"
                     placeholder="e.g. oregano"
@@ -35,9 +34,19 @@ export default function Main() {
                 />
                 <button>Add ingredient</button>
             </form>
-                <ul className={styles.ull}>
-                    {ingrlist}
-                </ul>
+
+
+            {ingredientlist.length > 0 && <section>
+                <h2  className={styles.h2} >Ingredients on hand:</h2>
+                <ul  className={styles.ull} aria-live="polite">{ingrlist}</ul>
+                <div className={styles.getrecipecontainer}>
+                    <div>
+                        <h3>Ready for a recipe?</h3>
+                        <p>Generate a recipe from your list of ingredients.</p>
+                    </div>
+                    <button>Get a recipe</button>
+                </div>
+            </section>}
         </main>
     )
 }
