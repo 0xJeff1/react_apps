@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/core-auth": "^1.10.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
-    "@fortawesome/react-fontawesome": "^0.2.3"
+    "@fortawesome/react-fontawesome": "^0.2.3",
+    "react-markdown": "^10.1.0"
   }
 }

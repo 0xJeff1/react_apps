@@ -6,14 +6,15 @@ import Headerchef from  "../components/Headerchef"
 import Content from "../components/content"
 import AnonymArray from "../data"
 import projectlist from "../list"
+import { useEffect } from "react"
 import { BrowserRouter as Router  , Routes , Route } from 'react-router-dom'
-
-
 
 function App() {
 
-  
-  
+
+
+
+
   const b = AnonymArray.map((obj) => {
     return (
       <Content
