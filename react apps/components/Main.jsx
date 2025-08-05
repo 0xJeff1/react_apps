@@ -4,7 +4,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import styles from '../src/Main.module.css';
 
 export default function Main() {
-    const [ingredientlist, setingredientlist] = useState(["tomato", "potato", "cheese", "pig meal"]);
+    const [ingredientlist, setingredientlist] = useState([]);
     const [isShown, setisShown] = useState(false);
     const [recipe, setRecipe] = useState('');
 
