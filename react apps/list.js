@@ -23,8 +23,8 @@ export default [
     description:
       "Generate random memes using an external API and controlled inputs. Utilizes `useState` for form handling and `useEffect` for API calls.",
     module: "Section 4 – Side Effects in React",
-    liveLink: "https://your-live-link.com/meme-generator",
-    figmaLink: "https://figma.com/file/.../Meme-Generator",
+    liveLink: "/memegenerator",
+    figmaLink: "https://www.figma.com/design/MoLwFPHNHJVrzdFurxHzNV/Meme-Generator?node-id=0-1&p=f&t=P3pCb9rNlGfjrs0W-0",
   },
   {
     title: "Airbnb Clone",
