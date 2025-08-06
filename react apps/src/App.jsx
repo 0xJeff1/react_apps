@@ -1,5 +1,6 @@
 import "./App.css"
 import Header from "../components/Header"
+import Mainapp from "../components/Mainapp"
 import Memeheader from "../components/Memeheader"
 import Mememain from "../components/Mememain"
 import Main from "../components/Main"
@@ -57,6 +58,10 @@ function App() {
             <Route path='/memegenerator' element={<>
               <Memeheader />
               <Mememain />
+            </>}/>
+
+            <Route path='/tenezies' element={<>
+                <Mainapp />
             </>}/>
 
         </Routes>

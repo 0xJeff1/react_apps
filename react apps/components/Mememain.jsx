@@ -84,7 +84,7 @@ export default function Main() {
                 <button  onClick={randomimg}>Get a new meme image 🖼</button>
             </div>
             <div className={styles.meme}>
-                <img src={Meme.imageUrl} />
+                <img className={styles.dimention} src={Meme.imageUrl} />
                 <span className={styles.top}>{Meme.topText}</span>
                 <span className={styles.bottom}>{Meme.bottomText}</span>
             </div>

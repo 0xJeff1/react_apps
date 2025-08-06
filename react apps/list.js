@@ -26,6 +26,16 @@ export default [
     liveLink: "/memegenerator",
     figmaLink: "https://www.figma.com/design/MoLwFPHNHJVrzdFurxHzNV/Meme-Generator?node-id=0-1&p=f&t=P3pCb9rNlGfjrs0W-0",
   },
+
+  {
+    title: "Tenzies Game",
+    description:
+      "A simple dice game where the goal is to roll until all dice are the same. Built using React state management, conditional rendering, and array manipulation to track and freeze dice. Includes roll counter and win detection.",
+    module: "Section 2 – State, Props, and User Interaction",
+    liveLink: "/tenezies",
+    figmaLink: "https://figma.com/file/.../Tenzies-Game"
+  },
+
   {
     title: "Airbnb Clone",
     description:
@@ -34,20 +44,5 @@ export default [
     liveLink: "https://your-live-link.com/airbnb-clone",
     figmaLink: "https://figma.com/file/.../Airbnb-Clone",
   },
-  {
-    title: "Digital Business Card",
-    description:
-      "A personal business card built with JSX and React props. Teaches fundamentals of component reuse, layout, and static content structure.",
-    module: "Section 1 – JSX and Props",
-    liveLink: "https://your-live-link.com/business-card",
-    figmaLink: "https://figma.com/file/.../Digital-Business-Card",
-  },
-  {
-    title: "React Facts App",
-    description:
-      "A static site displaying key facts about React. Styled with custom CSS, focused on learning JSX structure and class-based styling.",
-    module: "Section 1 – Intro to React",
-    liveLink: "https://your-live-link.com/react-facts",
-    figmaLink: "https://figma.com/file/.../React-Facts",
-  }
+  
 ];
