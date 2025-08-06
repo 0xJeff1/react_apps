@@ -37,7 +37,7 @@ export default [
   },
 
   {
-    title: "Airbnb Clone",
+    title: "Assembly EndGame",
     description:
       "Static experience listing layout mimicking the Airbnb UI. Built with reusable card components, layout props, and conditional rendering.",
     module: "Section 1 – Component-Based Architecture",
