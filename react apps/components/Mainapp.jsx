@@ -6,24 +6,6 @@ import Confetti from 'react-confetti'
 import { useRef } from "react";
 
 
-  /**
-     * Critical thinking time!
-     * 
-     * We want to indicate to the user that the game is over
-     * if (1) all the dice are held, and (2) all the dice have
-     * the same value.
-     * 
-     * How might we do this? Some questions to consider:
-     * 
-     * 1. Do we need to save a `gameWon` value in state? If so, why?
-     *    If not, why not?
-     * 
-     * 2. Do we need to create a side effect to synchronize the `gameWon`
-     *    value (whether it's in state or not) with the current state of 
-     *    the dice?
-     * 
-     */
-
 
 export default function App() {
     const [arrnumbers, setnumbers] = useState(()=> generateAllNewDice())
