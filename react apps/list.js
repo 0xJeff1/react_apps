@@ -41,7 +41,7 @@ export default [
     description:
       "Static experience listing layout mimicking the Airbnb UI. Built with reusable card components, layout props, and conditional rendering.",
     module: "Section 1 – Component-Based Architecture",
-    liveLink: "https://your-live-link.com/airbnb-clone",
+    liveLink: "/assembly",
     figmaLink: "https://figma.com/file/.../Airbnb-Clone",
   },
   

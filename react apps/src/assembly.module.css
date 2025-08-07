@@ -55,6 +55,17 @@ section.gamestatus {
     width: 417px;
 }
 
+section.gamestatu {
+    background-color: #d34848;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F9F4DA;
+    border-radius: 4px;
+    margin-block: 30px;
+    width: 417px;
+}
+
 section.gamestatus > p {
     margin: 5px;
 }
@@ -100,11 +111,28 @@ section.languagechips {
     padding-bottom: 21px;
 }
 
+.keyboardhide{
+    position: relative;
+    pointer-events: none;
+    opacity: 0.4; /* 50% transparent */
+}
+
 .buttonfirst
 {
     height: 35px;
     width: 35px;
     background-color: #FCBA29;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 6px;
+}
+
+.buttonfirst1
+{
+    height: 35px;
+    width: 35px;
+    background-color: #e0582e;
     border: 1px solid #D7D7D7;
     border-radius: 3px;
     cursor: pointer;
@@ -132,4 +160,3 @@ section.languagechips {
     margin-inline: auto;
     cursor: pointer;
 }
-
