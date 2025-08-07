@@ -1,5 +1,6 @@
 import "./App.css"
 import Header from "../components/Header"
+import Assembly from "../components/Assembly"
 import Mainapp from "../components/Mainapp"
 import Memeheader from "../components/Memeheader"
 import Mememain from "../components/Mememain"
@@ -62,6 +63,10 @@ function App() {
 
             <Route path='/tenezies' element={<>
                 <Mainapp />
+            </>}/>
+
+            <Route path='/assembly' element={<>
+                <Assembly />
             </>}/>
 
         </Routes>
